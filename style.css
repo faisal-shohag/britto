@@ -48,7 +48,7 @@ body{
 .loginPages{
   padding: 0;
   margin:0;
-  background: #cfe0e0;
+  background: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
 }
