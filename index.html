@@ -42,6 +42,7 @@
   </head>
   <body>
     <div class="loginPages">
+
       <div class="page1 animate__animated animate__fadeInRight">
         <center>
           <div class="image">
@@ -99,7 +100,7 @@
     </div>
       <div class="input-field">
         <i class="material-icons prefix">phone</i>
-        <input id="lphone" type="tel" name="loginPhone" class="validate" required>
+        <input id="lphone" type="tel" name="lphone" class="validate" required>
         <label for="lphone">মোবাইল নম্বর</label>
       </div>
       <center>
@@ -120,7 +121,6 @@
       <div class="lInfo">
     <!-- মোবাইল নম্বর দাও +880 সহ। Ex. +8801234567890 -->
       </div>
-      <div class="row">
 
         <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
@@ -168,13 +168,33 @@
     </form>
   </div>
 
-    </div>
+
+</div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.7/imask.min.js" integrity="sha512-qCt/OTd55ilhuXLRNAp/G8uONXUrpFoDWsXDtyjV4wMbvh46dOEjvHZyWkvnffc6I2g/WHSKsaFUCm0RISxnzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
+    <script>
+       var firebaseConfig = {
+    apiKey: "AIzaSyCh5_bmhpP4yREh6HCfy8ZuYOliewo99S0",
+    authDomain: "exam-7b314.firebaseapp.com",
+    databaseURL: "https://exam-7b314-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "exam-7b314",
+    storageBucket: "exam-7b314.appspot.com",
+    messagingSenderId: "91964271543",
+    appId: "1:91964271543:web:35b95fb3b0304f191c1632",
+    measurementId: "G-Q05K194VD9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db = firebase.database();
+</script>
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

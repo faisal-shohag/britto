@@ -49,7 +49,7 @@ body{
   padding: 0;
   margin:0;
   background: #cfe0e0;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .loginPages .text{
@@ -97,7 +97,15 @@ background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  1
   left: 0;
 }
 
-.disabled, .select-dropdown, .dropdown-trigger{
+button, input, optgroup, select, textarea {
+  font-family: Quicksand, 'Hind Siliguri', 'sans-serif' !important;
+}
+
+.swal2-content .select-wrapper{
+  display: none;
+}
+
+ .disabled, .select-dropdown, .dropdown-trigger{
   font-family: Quicksand, 'Hind Siliguri', 'sans-serif';
 }
 
@@ -116,6 +124,7 @@ background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  1
   /* display: none; */
 background: linear-gradient(-45deg, var(--orange), rgb(255, 0, 0));
 }
+
 
 
 .page2{
