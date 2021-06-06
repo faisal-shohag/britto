@@ -49,7 +49,7 @@ body{
   padding: 0;
   margin:0;
   background: #cfe0e0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .loginPages .text{
