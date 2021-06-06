@@ -50,6 +50,7 @@ body{
   margin:0;
   background: #cfe0e0;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .loginPages .text{

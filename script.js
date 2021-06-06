@@ -7,7 +7,13 @@ let l =-1;
 //     title: 'Oops...',
 //     text: 'Something went wrong!',
 //     footer: '<a href="">Why do I have this issue?</a>'
-//   })
+//   });
+
+Swal.fire(
+    'লগইন সম্পন্ন!',
+    '',
+    'success'
+  );
 
 $('.next').click(function(){
 l++;
