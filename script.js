@@ -12,3 +12,17 @@ $('.prev').click(function(){
     $(lhide[4]).hide();
     $(lpages[l]).show();
 });
+
+
+var phoneMask = IMask(
+    document.getElementById('phone'), {
+      mask: '+{880}0000000000'
+    });
+var phoneMask2 = IMask(
+        document.getElementById('lphone'), {
+          mask: '+{880}0000000000'
+});
+
+$(document).ready(function(){
+    $('select').formSelect();
+});

@@ -44,10 +44,6 @@ body{
     /* background: #000; */
 }
 
-.page1{
-  /* display: none; */
-background: linear-gradient(-45deg, var(--orange), rgb(255, 0, 0));
-}
 
 .loginPages{
   padding: 0;
@@ -85,8 +81,12 @@ background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  1
      display: block;
      width: 125px;
      font-size: 20px;
-     margin-top: 100px;
    
+   
+}
+
+.next{
+  margin-top: 100px;
 }
 
 .page1, .page2, .page3, .page4, .page5{
@@ -97,11 +97,26 @@ background-image: linear-gradient(to right, #ff00cc 0%, #333399  51%, #ff00cc  1
   left: 0;
 }
 
+.disabled, .select-dropdown, .dropdown-trigger{
+  font-family: Quicksand, 'Hind Siliguri', 'sans-serif';
+}
+
+.loginPages button{
+  border: none;
+  font-family: Hind Siliguri;
+}
+
 .loginPages .button:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
+
+.page1{
+  /* display: none; */
+background: linear-gradient(-45deg, var(--orange), rgb(255, 0, 0));
+}
+
 
 .page2{
 display: none;

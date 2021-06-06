@@ -95,18 +95,19 @@
 <div class="lpHead">লগইন</div>
   <form id="login" class="lForm">
     <div class="lInfo">
-  মোবাইল নম্বর দাও +880 সহ। Ex. +8801234567890
+  <!-- মোবাইল নম্বর দাও +880 সহ। Ex. +8801234567890 -->
     </div>
       <div class="input-field">
         <i class="material-icons prefix">phone</i>
-        <input id="icon_telephone" type="tel" name="loginPhone" class="validate" required>
-        <label for="icon_telephone">মোবাইল নম্বর</label>
+        <input id="lphone" type="tel" name="loginPhone" class="validate" required>
+        <label for="lphone">মোবাইল নম্বর</label>
       </div>
+      <center>
+        <button type="submit" class="button login">লগইন</button>
+        অথবা
+        <a href="#" class="next">রেজিস্ট্রেশন করো!</a>
+      </center>
   </form>
-
-  <center>
-    <a href="#" class="next">রেজিস্ট্রেশন করো!</a>
-  </center>
 </div>
 
 
@@ -115,7 +116,7 @@
   <img height="150px" src="./images/reg01.png">
   </center>
   <div class="lpHead">রেজিস্ট্রেশন</div>
-    <form id="login" class="lForm">
+    <form id="reg" class="lForm">
       <div class="lInfo">
     <!-- মোবাইল নম্বর দাও +880 সহ। Ex. +8801234567890 -->
       </div>
@@ -123,34 +124,48 @@
 
         <div class="input-field">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_telephone" type="tel" name="username" class="validate" required>
+          <input id="icon_telephone" type="text" name="username" class="validate" required>
           <label for="icon_telephone">তোমার নাম</label>
         </div>
 
         <div class="input-field">
+          <i class="material-icons prefix">phone</i>
+          <input id="phone" type="tel" name="phone" class="validate" required>
+          <label for="phone">মোবাইল নম্বর</label>
+        </div>
+ 
+
+        <div class="input-field">
           <i class="icofont-university prefix"></i>
-          <input id="icon_telephone" name="college" type="tel" class="validate" required>
+          <input id="icon_telephone" name="college" type="text" class="validate" required>
           <label for="icon_telephone">কলেজের নাম</label>
         </div>
 
         <div class="input-field">
           <i class="material-icons prefix">location_city</i>
-          <input id="icon_telephone" type="tel" name="city" class="validate" required>
+          <input id="icon_telephone" type="text" name="city" class="validate" required>
           <label for="icon_telephone">বিভাগীয় শহর</label>
         </div>
 
-        <div class="input-field">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" name="phone" class="validate" required>
-          <label for="icon_telephone">মোবাইল নম্বর</label>
+        
+
+        <div class="input-field col s12">
+          <i class="icofont-group-students prefix"></i>
+          <select name="gender">
+            <option value="" disabled selected>লিঙ্গ</option>
+            <option value="male">ছেলে</option>
+            <option value="female">মেয়ে</option>
+          </select>
         </div>
-      </div>
+      
+
+       
+      <center>
+        <button type="submit" class="button">সাবমিট</button>
+        অথবা
+        <a href="#" class="prev">লগইন করো!</a>
+      </center>
     </form>
-
-    <center>
-
-      <a href="#" class="prev">লগইন করো!</a>
-    </center>
   </div>
 
     </div>
@@ -158,6 +173,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.0.7/imask.min.js" integrity="sha512-qCt/OTd55ilhuXLRNAp/G8uONXUrpFoDWsXDtyjV4wMbvh46dOEjvHZyWkvnffc6I2g/WHSKsaFUCm0RISxnzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./script.js"></script>
   </body>
